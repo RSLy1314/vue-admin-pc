@@ -1,11 +1,13 @@
 <template>
-    <div class="">
+    <div>
+        <y-tree></y-tree>
     </div>
 </template>
 
 <script>
 // import  from ''
 // import { mapState,mapGetters,mapActions,mapMutations } from 'vuex'
+import yTree from '@/components/y-tree';
 
 export default {
     // 组件名 每个文件的name都应该是唯一的
@@ -29,7 +31,9 @@ export default {
     // 监视
     watch: {},
     // 组件
-    components: {},
+    components: {
+        yTree
+    },
     // 过滤器
     filters: {},
     // 自定义指令
